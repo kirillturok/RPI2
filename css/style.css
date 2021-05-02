@@ -1,0 +1,234 @@
+.mainClass{
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  opacity: 100%;
+  /*box-sizing: border-box;*/
+  
+}
+
+.wrapper{
+  opacity: 100%;
+  background-image: url('/overlay.png');
+  min-height: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+ justify-content: center;
+ /*box-sizing: border-box;*/
+}
+
+
+.weather{
+  width: 200px ;
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+
+.weather-description {
+  font-size: 20px;
+  color: #ffffff;
+}
+.windspeed{
+  font-size: 20px;
+  color: #ffffff;
+}
+.humidity{
+  font-size: 20px;
+  color: #ffffff;
+}
+.city{
+  border: solid 1px #ffffff;
+  border-style: solid 1 #ffffff;
+}
+
+
+h1{
+  color: white;
+}
+body {
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    transition: background-image 1s ease-in-out;  
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+}
+h2{
+  color: white;
+}
+.time{
+    font-size: 8rem;
+}
+.date{
+    font-size: 4rem;
+}
+h1 {
+    margin-bottom: 3rem;
+
+}
+h2 {
+    margin-bottom: 0.5rem;
+    opacity: 0.8;
+}
+@media(max-width: 800px){
+.time{  
+  font-size: 4.5rem;
+}
+.date{
+font-size: 3rem;
+}
+h1{
+font-size: 1.5rem;
+}
+h2{
+  font-size: 1.5rem;
+}
+}
+@media(max-width: 600px){
+  .time{  
+    font-size: 3.2rem;
+  }
+  .date{
+  font-size: 2.1rem;
+  }
+  h1{
+  font-size: 1.2rem;
+  }
+  h2{
+    font-size: 1.2rem;
+  }
+}
+
+.btnnext {
+    appearance: none;
+    border: 0;
+    border-radius: 5px;
+    background: #4676D7;
+    color: #fff;
+    padding: 8px 16px;
+    font-size: 16px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+  }
+  .quote {
+    font: 0.9rem Georgia, serif;
+    margin: 0;
+    background: #eee;
+    padding: 0.5em;
+    border-radius: 0.8em; 
+    color: black;
+    max-width: 60%;
+  }
+  .quote figcaption,
+  .quote blockquote {
+    margin: 1em;
+  }
+  .quote figcaption {
+    text-align: right;
+  }
+  
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+  .btn {
+    width: 90px;
+    height: 40px;
+    border: 0;
+    border-radius: 10%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #4676D7;
+    color:#ffffff;
+    font-size:16px;
+  }
+  .btn:hover {
+    animation-name: quotechangecolor;
+  }
+  @keyframes nextbtnanimation {
+    from {background-color: #4676D7;
+      color: white;
+    }
+    to {background-color: white;
+      color: #4676D7;
+    }
+  }
+  @keyframes quotechangecolor {
+    from {background-color: red;}
+    to {background-color: yellow;}
+  }
+  @keyframes btnpushed {
+    from{background-color: #ffffff;}
+    to{background-color:aqua;}
+  }
+  .btn:active,
+  .btn:focus {
+    outline: 0;
+  }
+  .btn:active{
+    animation-name: btnpushed;
+  }
+  .temperature {    
+    font-size: 40px;
+  }
+  .weather-icon {
+    font-size: 80px;
+    color: #44aadd;
+  }
+
+  .weather-icon:hover {
+    animation: shake 1.5s;
+  }
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+  }
+  .btn{
+    cursor: pointer;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+  }
+  .quote{
+    position: absolute;
+    bottom: 10px;
+
+  }
+  .btnnext:hover{
+    cursor: pointer;
+    animation-name: nextbtnanimation;
+    animation-duration: 4s;
+  }
+  .weatherandtemperature{
+    display: flex;
+  }
+  .maininfo{
+    display: flex;
+    flex-direction: column;
+    width: 166.48px;
+  }
+  .quotediv{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .focus{
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
